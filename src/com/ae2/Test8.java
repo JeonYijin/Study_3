@@ -42,7 +42,7 @@ public class Test8 {
 		}else {
 			System.out.println("불합격");
 		}
-*/		
+*/	
 /*		if(kor>=40) {
 			if(eng>=40) {
 				if(math>=40) {
