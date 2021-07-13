@@ -12,14 +12,14 @@ public class ForTest3 {
 		int time = sc.nextInt();
 		
 		//종료 시간 입력받기
-		//ex) 12초 0초, 1초...12초 종료 단, 60이라는 상수는 불가능
+		//ex) 12초 0초, 1초...12초 종료 단, 60이라는 상수는 변경 불가능
 		
 		for(int sec = 0; sec <60; sec++) {
 			if(sec>time) {
 				break;
 			}else {
 			System.out.println(sec + "초");
-		}
+			}
 		}
 		
 		
