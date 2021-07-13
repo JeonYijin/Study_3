@@ -71,6 +71,48 @@ public class Test8 {
 			System.out.println("불합격");
 		}
 		
+//		if(avg>=60) {
+//			if(kor>=40 && eng>=40 && math>=40) {
+//				System.out.println("합격");
+//			}else {
+//				System.out.println("불합격");
+//			}
+//		}else {
+//			System.out.println("불합격");
+//		}
+	
+//----------------------1차 코드--------------
+//		if(avg>=60) {
+//			if(kor>40) {
+//				if(eng>40) {
+//					if(math>40) {
+//						System.out.println("합격");
+//					}else {
+//						System.out.println("수학 불합격");
+//					}
+//				}else {
+//					System.out.println("영어 불합격");
+//				}
+//			}else {
+//				System.out.println("국어 불합격");
+//			}
+//		}else {
+//			System.out.println("평균 불합격");
+//		}
+//----------------------2차 코드----------------
+//		if(avg>=60) {
+//			if(kor>40 && eng>40 && math>40) {
+//				System.out.println("합격");
+//			}else {
+//				System.out.println("불합격");
+//			}
+//		}else {
+//			System.out.println("불합격");
+//		}
+
+		
+		
+		
 		
 		System.out.println("TEST8 FINISH");
 		
