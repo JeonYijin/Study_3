@@ -27,6 +27,16 @@ public class ForTest9 {
 			for(int i=0; i<30; i=i+num) {
 				System.out.println(sound);
 			}
+//			
+//			for(int i=0; i<30; i++) {
+//				if(tang ==1) {
+//					System.out.println("탕");
+//				}else {
+//					i = i+2;
+//					System.out.println("타타탕");
+//				}
+//			}
+			
 			
 			
 			
