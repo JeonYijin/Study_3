@@ -21,7 +21,14 @@ public class ForTest3 {
 			System.out.println(sec + "초");
 			}
 		}
-		
+/*
+ * 		for(int sec = 0; sec < 60; sec++){
+ * 			System.out.println(sec + "초");
+ * 			if(sec == time){
+ * 				sec = 60; or sec = 59;
+ * 			}
+ * 		}		
+ */
 		
 		System.out.println("ForTest3 finish");
 	}
