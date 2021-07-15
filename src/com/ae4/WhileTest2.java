@@ -46,28 +46,41 @@ public class WhileTest2 {
 			int level = 1;
 			int gold = 0;
 			int monster = 0;
-			int add = 1000;			
-			if(!flag) {
+			// 레벨업 시 지급되는 골드
+			int add = 1000;
+			
+			if(iid==id && ppw==pw) {
 				for(level = 1; level<15; level++) {
 					for(int i =0; i< level*3; i++) {
+						
 						monster ++;
 						System.out.println(monster+"마리를 잡았습니다.");
-					} monster = 0;
+					} 
+						//monster = 0; 여기 있었는데 왜 초기화는 맨 마지막에??
+					
 					if(monster%3 ==0) {
+						//level을 업그레이드 한 상태로 출력하기 위해++
 						level++;
 						System.out.println(level+"레벨 업");
+					
 						if(level%5 ==0) {
-								gold = gold + add;
-								System.out.println(add +"골드를 지급합니다.");
-								add = add+1000;
-						}level = level-1;
+							gold = gold + add;
+							System.out.println(add +"골드를 지급합니다.");
+							add = add+1000;
+						}
+						monster = 0;
+						//다시 for문으로 돌아갔을 때 수가 달라지지 않게하기 위해
+						level = level-1;
 						
 					}
-				}	System.out.println("최종레벨: " + level+ " 골드: " + gold);
-					System.out.println("게임을 종료합니다.");
-					break;
+				}	
+				System.out.println("최종레벨: " + level+ " 골드: " + gold);
+				System.out.println("게임을 종료합니다.");
+				break;
 
-			
+			//해결하고 싶은 점 1. add라는 변수 없이 gold만을 가지고 증가시키기
+			//2. monster의 초기화, level을 찍을 때의 문제점 +1을 안할 수 있는 방법
+			//3. 불필요한 level의 증감
 			
 		}
 		
