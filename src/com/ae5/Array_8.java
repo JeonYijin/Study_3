@@ -23,7 +23,7 @@ public class Array_8 {
 			System.out.println("번호선택 >>");
 			//입력한 번호 num
 			int num = sc.nextInt();
-			boolean check = true;
+			boolean check = false;
 			//로그인을 시도한다면
 			if(num==1) {
 				//아이디와 비밀번호 입력받기
@@ -36,9 +36,8 @@ public class Array_8 {
 				for(int i=0; i<ids.length; i++) {
 					if(id == ids[i] && pw==pws[i]) {
 						System.out.println("로그인 성공");
+						check = true;
 						break;
-					}else {
-						check = !check;
 					}
 				}
 				if(check==false) {
@@ -55,10 +54,11 @@ public class Array_8 {
 				for(int i =0; i<ids.length; i++) {
 					if(nid == ids[i]) {
 						System.out.println("중복된 아이디입니다.");
-						check = false;
+						check = true;
+						break;
 					}
 				}	//아이디가 중복일때 회원가입 실패하고 처음으로 돌아가기
-				if(check==false) {
+				if(check==true) {
 					System.out.println("회원가입실패");
 					continue;
 				}else {//중복아니면 배열에 담기
@@ -87,20 +87,7 @@ public class Array_8 {
 			
 			
 		}
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+
 		
 		
 		
