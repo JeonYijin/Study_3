@@ -11,21 +11,16 @@ public class Array_4 {
 		
 		//ar1에 4를 추가 새로운 배열하나 만들어서 ar1을 포함시키기
 		
-		int []ar2 = new int[4];
+		int []ar2 = new int[ar1.length+1];
 		for(int i =0; i<ar1.length; i++) {
 			ar2[i] = ar1[i];
 		}	
-			ar2[ar2.length-1] = ar2.length;
+			ar2[ar1.length] = 1212;
 			ar1 = ar2;
 		
 		for(int i=0; i<ar1.length; i++) {
 			System.out.println(ar1[i]);
 		}
-		
-		
-		
-		
-		
 		
 		
 	}
