@@ -48,15 +48,19 @@ public class Array_Answer {
 							switch(num2) {
 							case 1:
 								System.out.println("1.로그아웃");
+								flag = !flag;
 								break;
 							case 2:
-								System.out.println("2.회원탈퇴");
+								System.out.println("2.회원탈퇴"); //회원이 몇번 인덱스인지, 그걸 비교해서 제거 하기
 								int iids[] = new int[ids.length-1];
+								int j =0;
+								//int k = ids.indexOf(id);
 								for(int i =0; i<ids.length; i++) {
 									if(id==ids[i]) {
-										iids[i] = ids[i];
 									}
 								}
+								
+								
 								break;
 							default :
 								System.out.println("종료");
