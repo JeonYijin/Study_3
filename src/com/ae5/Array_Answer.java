@@ -44,27 +44,34 @@ public class Array_Answer {
 					}else {
 						System.out.println("1.로그아웃 2.회원탈퇴 3.종료");
 						int num2 = sc.nextInt();
-						while(flag) {
+						boolean start = true;
+						while(start) {
 							switch(num2) {
 							case 1:
 								System.out.println("1.로그아웃");
-								flag = !flag;
+								System.out.println("로그아웃 되었습니다.");
+								start = !start;
 								break;
 							case 2:
 								System.out.println("2.회원탈퇴"); //회원이 몇번 인덱스인지, 그걸 비교해서 제거 하기
 								int iids[] = new int[ids.length-1];
-								int j =0;
-								//int k = ids.indexOf(id);
-								for(int i =0; i<ids.length; i++) {
-									if(id==ids[i]) {
-									}
-								}
-								
+								int ppws[] = new int[pws.length-1];
+ 								int j =0;
+ 								
+ 								for(int i=0; i<ids.length; i++) {
+ 									if(id == ids[i] && pw==pws[i]) {
+ 										continue;
+ 									}
+ 									iids[j] = ids[i];
+ 									ppws[j] = pws[i];
+ 									j++;
+ 								}ids = iids;
+								pws = ppws;
 								
 								break;
 							default :
 								System.out.println("종료");
-								flag = false;
+								start = false;
 							}
 						}
 					}
